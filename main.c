@@ -17,7 +17,7 @@ int main (int argc , char *argv[])
 			r += atoi(argv[i]);
 	}
 
-	printf("Sum of the integers: %d\n" , r);
+	printf("Total integers: %d\n" , r);
 
 	for (int i = 1; i < argc; i++)
 	{
@@ -25,7 +25,7 @@ int main (int argc , char *argv[])
 			false = 0;
 		else
 		{
-			for (j = 0; j < argc; j++)
+			for (j = 1; j < argc; j++)
 			{
 				if ((strcmp(argv[i] , argv[j]) != 0) && (strcasestr(argv[j] , argv[i]) != NULL))
 					printf("%s is a substring of %s\n" , argv[i], argv[j]);
