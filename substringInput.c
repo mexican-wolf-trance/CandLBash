@@ -1,3 +1,7 @@
+/*Charles Wyatt
+ cs 2750
+ 11/19/17 */
+
 #define _GNU_SOURCE
 
 #include <stdio.h>
