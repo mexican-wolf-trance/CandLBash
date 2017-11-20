@@ -1,0 +1,14 @@
+echo "gimme yo number"
+read num1
+echo "gimme anotha"
+read num2
+
+numtotes=$((num1 + num2))
+if (((($numtotes % 2)) == 0))
+then 
+   echo "wassup! it's even or whatever!"
+else 
+   echo "well, I guess it's odd..."
+fi
+
+echo "but i'm biased!"

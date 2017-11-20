@@ -1,0 +1,16 @@
+BEGIN { print "<< Start of file >>" }
+
+ 
+{
+if (NR > 2 && NR < 6)
+{
+word += NF
+printf NR ": "
+for (i = NF; i >= 1; i--)
+   printf "%s ", $i;
+printf "\n";
+}
+}
+
+
+END { printf "<< End of file: wordCount = "word" >>\n" }

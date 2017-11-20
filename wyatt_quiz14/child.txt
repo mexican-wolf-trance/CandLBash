@@ -1,0 +1,10 @@
+
+ Hello I am the child process 
+ My pid is 9794 and ppid is 9793
+
+ 9 quared is 81
+
+ Hello I am the child process 
+ My pid is 9878 and ppid is 9877
+
+ 9 quared is 81

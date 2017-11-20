@@ -1,0 +1,3 @@
+Thu Aug 31 18:28:45 CDT 2017
+output.txt
+/accounts/students/c/cwdh4/output

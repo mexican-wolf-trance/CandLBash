@@ -1,0 +1,41 @@
+!#/bin/bash
+
+#Charles Wyatt
+#cs2750
+#10/02/2017
+
+
+echo "What would you like to do? Enter your selections followed by 2 numbers, all separated by a space"
+printf "a. Add\ns. Subtract\nm. Multiply\nd. Divide\n"
+read a b c
+if [[ -z "$a" || -z "$b" || -z "$c" ]]
+ then
+  echo "You didn't set a value! Guh." 
+  exit 1
+fi
+funca ()
+{
+ d=$(($b + $c))
+ echo "$d"
+}
+funcs ()
+{
+ d=$(($b - $c))
+ echo "$d"
+}
+funcm ()
+{
+ d=$(($b * $c))
+ echo "$d"
+}
+funcd ()
+{
+ if (( $c == 0 ))
+  then
+   echo "DIVISION BY 0!! ABORT! ABORT!"
+ else
+  d=$(($b / $c))
+  echo "$d"
+ fi
+}
+func$a

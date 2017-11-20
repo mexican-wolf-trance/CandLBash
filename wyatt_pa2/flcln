@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#Charles Wyatt
+#cs2750
+#10/02/2017
+
+find $1 -ls -type f | sort -k7nr | awk '{print $11}' | sed -r 's/^.+\///'
+
+#find $1 -siz 0 -exec rm -i {} \;
+
+array=()
+while IFS= read -r -d $'\0'; do
+  array+=("$REPLY")
+done < <(find $1 -size 0 -print0)
+len=${#array[*]}
+array=( "${array[@]##*/}" )
+
+for ((n=0;n<$len;n++))
+{
+  echo "Do you want to delete ${array[$n]}?"
+  read answer
+  if (( answer == YES || answer == yes || answer == y || answer == Y ))
+   then
+    find $1 -name ${array[$n]} -delete
+  fi
+}
