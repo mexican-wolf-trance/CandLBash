@@ -1,0 +1,45 @@
+******************************************
+Read me file for deater and phone programs
+******************************************
+
+
+***********
+PHONE
+***********
+
+
+The phone comand takes any number of alphanumeric arguments and returns 
+the first ten digits as a phone number
+
+It checks if has at least 10 digits. It can have as many letters as it 
+wants, as the program is only concerned with the digits.
+
+If an argument has less than 10 digits, it lets you know and then 
+terminates
+
+If more than 10, it ignores every digit after the tenth digit
+
+
+***********
+DEATER
+***********
+
+This program takes any number of alphanumeric arguments. It then sifts 
+through all of the arguments looking for either a digit or a string.
+
+It then adds all of the digits together. Finally, it siftsthrough the 
+string arguments and checks if the current string is a substring of a 
+future string.
+
+
+***********
+NOTES
+***********
+
+The gitlog.txt exists because I was saving and updating the function 
+files to the wrong directory. So, I saved the log and placed it here to 
+show my progress
+
+************
+END
+************
